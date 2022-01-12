@@ -45,6 +45,6 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
-end
+  config.active_job.queue_adapter = :inline #追記 これはdo~endの中に追記する
 
-config.active_job.queue_adapter = :inline #追記
+end
